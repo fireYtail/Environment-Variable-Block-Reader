@@ -1,7 +1,7 @@
 # Environment-Variable-Block-Reader
 This software allows you to read any currently running Windows process environment variable block by specifying its process ID, this data can be saved as file(s) or processed for your specific use case.
 
-The compiled version requires .NET Framework v4.6 or above. However, you can take the source code to remove this requirement, build it with a different language, or change the software, partially or completely, to meet your specific needs.
+The compiled version requires .NET Framework Runtime v4.6 or above. However, you can take the source code to remove this requirement, build it with a different language, or change the software, partially or completely, to meet your specific needs.
 
 It is an "any CPU" build, so you can run this on 32 bit Windows. It defaults to 64 bits mode, since a 32 bit proccess can't read the environment block of a 64 bit process, but in 64 bits mode it can read both target types without an issue.
 
