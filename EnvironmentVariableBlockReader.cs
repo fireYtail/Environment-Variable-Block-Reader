@@ -325,7 +325,7 @@ class EnvironmentVariableBlockReader
         {
             string[] usageInformation ={
                 string.Empty,
-                "Environment Variable Block Reader v1.0.0.0 by fireYtail                                  Usage (case insensitive)",
+                "Environment Variable Block Reader v1.0.1.0 by fireYtail                                  Usage (case insensitive)",
                 string.Empty,
                 "evbr.exe pid=0                                Writes all variables of EVBR itself to console / standard output.",
                 "evbr.exe pid=0 crlf=[FILE]                    Writes all variables of EVBR itself to [FILE] in UTF-8  (CR - LF)",
@@ -440,13 +440,13 @@ class EnvironmentVariableBlockReader
         }
         if (!args[0].ToLower().StartsWith("pid="))
         {
-            split = args[0].ToLower().Split('=');
+            split = args[0].Split('=');
         }
         else
         {
-            split = args[1].ToLower().Split('=');
+            split = args[1].Split('=');
         }
-        string otherArgumentType = split[0];
+        string otherArgumentType = split[0].ToLower();
         otherArgumentValue = split[1];
         if (otherArgumentType == "crlf")
         {
